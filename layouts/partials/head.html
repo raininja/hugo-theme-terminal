@@ -12,7 +12,7 @@
 {{ if (isset .Params "color") }}
   <link type="text/css" rel="stylesheet" href="{{ (printf "assets/%s.css" .Params.color) | absURL }}">
 {{ else if and (ne $.Site.Params.ThemeColor "orange") (ne $.Site.Params.ThemeColor "color" "") }}
-  <link type="text/css" rel="stylesheet" href="{{ (printf "assets/%s.css" $.Site.Params.ThemeColor) | absURL }}">
+  <link type="text/css"  rel="stylesheet" href="{{ (printf "assets/%s.css" $.Site.Params.ThemeColor) | absURL }}">
 {{ end }}
 
 <!-- Custom CSS to override theme properties (/static/style.css) -->
